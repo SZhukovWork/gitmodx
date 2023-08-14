@@ -18,24 +18,10 @@
 
 /Users/YourUser/websites/YourSite/core/components/gitmodx/
 
-Задайте в настройках системы две настройки
-------------------------------------------
-```
-parser_class_path = {core_path}components/gitmodx/model/gitmodx/
-parser_class = gitModParser
-```
+Установка
+---------
 
-
-Скорректируйте файлы index.php
-------------------------------
-Да, я понимаю, что перезапись файлов ядра - плохое решение. Но, к сожалению, другого решения я не нашел. И тем не менее эти изменения минимальны.
-
-Просто запустите скрипт `cliscripts/changeindex.php` - он сделает замены в трех файлах:
-```
-MODX_BASE_PATH.'index.php'
-MODX_MANAGER_PATH.'index.php'
-MODX_CONNECTORS_PATH.'index.php'
-```
+Запустите cliscripts/index.php
 
 Применение
 ==========

@@ -17,24 +17,10 @@ It will looks like this:
 
 /Users/YourUser/websites/YourSite/core/components/gitmodx/
 
-Setup modx system settings
---------------------------
-```
-parser_class_path = {core_path}components/gitmodx/model/gitmodx/
-parser_class = gitModParser
-```
+Setup
+-----
 
-
-Rewrite system index.php files
-------------------------------
-Yes, I know, that rewriting system code is not right. But I have no another solution.
-
-Simply run script `cliscripts/changeindex.php`. He will make some replacements in files:
-```
-MODX_BASE_PATH.'index.php'
-MODX_MANAGER_PATH.'index.php'
-MODX_CONNECTORS_PATH.'index.php'
-```
+run cliscripts/index.php
 
 Usage
 =====
