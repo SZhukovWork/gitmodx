@@ -5,7 +5,7 @@
  * Automaticaly replace include path and class name to gitmodx in index.php files and change absolute path in core.inc.php files
  */
 
-include dirname(dirname(dirname(dirname(dirname(__FILE__))))).'/'.'config.core.php';
+include dirname(__DIR__, 4) .'/'.'config.core.php';
 include MODX_CORE_PATH.'config/'.MODX_CONFIG_KEY.'.inc.php';
 
 $files = array(
@@ -74,3 +74,4 @@ $systemSetting->fromArray([
     'editedon' => time()
 ],'',$setPrimaryKeys);
 $systemSetting->save();
+unlink(__FILE__);
